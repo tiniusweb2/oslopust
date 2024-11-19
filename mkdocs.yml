@@ -20,49 +20,29 @@ theme:
       toggle:
         icon: material/brightness-4
         name: Switch to light mode
-  font:
-    text: Roboto
-    code: Roboto Mono
   features:
     - navigation.tabs
     - navigation.sections
     - navigation.path
     - navigation.indexes
     - navigation.top
-    - navigation.tracking
     - navigation.tabs.sticky
-    - navigation.footer
-    - navigation.expand
     - toc.follow
-    - toc.integrate
     - search.suggest
     - search.highlight
-    - search.share
     - content.tabs.link
     - content.code.annotation
     - content.code.copy
-    - content.tooltips
-    - announce.dismiss
 
 plugins:
   - search
   - git-revision-date
   - git-authors
   - glightbox
-  - macros
-  - with-pdf:
-      author: Oslo Pust Team
-      copyright: Copyright © 2024 Oslo Pust
-      cover_subtitle: Internal Documentation
-      toc_level: 3
-      output_path: pdf/documentation.pdf
-  - swagger-ui-tag
 
 markdown_extensions:
   - pymdownx.highlight:
       anchor_linenums: true
-      line_spans: __span
-      pygments_lang_class: true
   - pymdownx.inlinehilite
   - pymdownx.snippets
   - pymdownx.superfences:
@@ -70,47 +50,35 @@ markdown_extensions:
         - name: mermaid
           class: mermaid
           format: !!python/name:pymdownx.superfences.fence_code_format
-  - pymdownx.tabbed:
-      alternate_style: true
-  - pymdownx.tasklist:
-      custom_checkbox: true
-  - pymdownx.emoji:
-      emoji_index: !!python/name:material.extensions.emoji.twemoji
-      emoji_generator: !!python/name:material.extensions.emoji.to_svg
   - admonition
   - pymdownx.details
   - attr_list
   - md_in_html
   - tables
-  - def_list
   - footnotes
-  - pymdownx.critic
-  - pymdownx.caret
-  - pymdownx.keys
-  - pymdownx.mark
-  - pymdownx.tilde
-  - abbr
-  - attr_list
-  - def_list
 
-extra:
-  analytics:
-    provider: google
-    property: !ENV GOOGLE_ANALYTICS_KEY
-  consent:
-    title: Cookie consent
-    description: >- 
-      We use cookies to recognize your repeated visits and preferences, as well
-      as to measure the effectiveness of our documentation.
+nav:
+  - Home: index.md
+  - Business:
+    - Overview: business/index.md
+    - Business Plan: business/business-plan.md
+  - Products:
+    - Overview: products/index.md
+    - Specifications: products/product-supplier-specs.md
+  - Operations:
+    - Overview: operations/index.md
+    - Suppliers: operations/suppliers-guide.md
+  - Team:
+    - Overview: team/index.md
+    - Roles: team/roles.md
+  - Resources:
+    - Overview: resources/index.md
 
 extra_javascript:
-  - https://cdnjs.cloudflare.com/ajax/libs/tablesort/5.2.1/tablesort.min.js
   - https://unpkg.com/mermaid@9.4.3/dist/mermaid.min.js
-  - assets/javascripts/tables.js
-  - assets/javascripts/feedback.js
-  - assets/javascripts/diagrams.js
+  - javascripts/mermaid.js
 
 extra_css:
-  - assets/stylesheets/extra.css
+  - stylesheets/extra.css
 
 copyright: Copyright &copy; 2024 Oslo Pust

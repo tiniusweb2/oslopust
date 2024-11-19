@@ -4,38 +4,33 @@ Welcome to the Oslo Pust internal documentation site. This wiki contains all ess
 
 ## Quick Navigation
 
-### 💼 [Business](business/index.md)
-- Business Plan
-- Market Analysis
-- Financial Projections
+### 💼 Business
+- [Business Plan](business/business-plan.md)
+- [Market Analysis](business/index.md)
 
-### 📦 [Products](products/index.md)
-- Product Specifications
-- Pricing Strategy
-- Development Pipeline
+### 📦 Products
+- [Product Specifications](products/product-supplier-specs.md)
+- [Development Pipeline](products/index.md)
 
-### 🔧 [Operations](operations/index.md)
-- Supplier Guide
-- Logistics
-- Quality Control
+### 🔧 Operations
+- [Supplier Guide](operations/suppliers-guide.md)
+- [Logistics](operations/index.md)
 
-### 👥 [Team](team/index.md)
-- Roles & Responsibilities
-- Communication Guidelines
-- Meeting Schedules
+### 👥 Team
+- [Roles & Responsibilities](team/roles.md)
+- [Team Overview](team/index.md)
 
-### 📚 [Resources](resources/index.md)
-- Tool Access
-- Important Links
-- Templates
+### 📚 Resources
+- [Tool Access](resources/index.md)
+- [Important Links](resources/index.md)
 
 ## Recent Updates
 
 !!! note "Latest Updates"
-   - Reorganized documentation structure
-   - Added comprehensive business plan
-   - Updated product specifications
-   - Added supplier guidelines
+    - Reorganized documentation structure
+    - Added comprehensive business plan
+    - Updated product specifications
+    - Added supplier guidelines
 
 ## Contributing
 
