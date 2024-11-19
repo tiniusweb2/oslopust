@@ -1,7 +1,6 @@
 site_name: Oslo Pust Wiki
 site_description: Internal documentation for Oslo Pust
 site_author: Oslo Pust Team
-site_url: https://tiniusweb2.github.io/oslopust/
 
 theme:
   name: material
@@ -30,39 +29,36 @@ theme:
     - toc.follow
     - search.suggest
     - search.highlight
-    - content.tabs.link
-    - content.code.annotation
-    - content.code.copy
-
-plugins:
-  - search
-  - git-revision-date
-  - git-authors
-  - glightbox
 
 markdown_extensions:
   - pymdownx.highlight:
       anchor_linenums: true
   - pymdownx.inlinehilite
   - pymdownx.snippets
-  - pymdownx.superfences
+  - pymdownx.superfences:
+      custom_fences:
+        - name: mermaid
+          class: mermaid
+          format: !!python/name:pymdownx.superfences.fence_code_format
   - admonition
   - pymdownx.details
   - attr_list
   - md_in_html
   - tables
-  - footnotes
+
+plugins:
+  - search
+  - git-revision-date
+  - git-authors
 
 extra_javascript:
-  - javascripts/mermaid.js
+  - https://unpkg.com/mermaid@10.6.1/dist/mermaid.min.js
 
 extra_css:
   - stylesheets/extra.css
 
-copyright: Copyright &copy; 2024 Oslo Pust
 nav:
   - Home: index.md
-  - Test: test.md
   - Business:
     - Overview: business/index.md
     - Business Plan: business/business-plan.md
@@ -77,3 +73,5 @@ nav:
     - Roles: team/roles.md
   - Resources:
     - Overview: resources/index.md
+
+copyright: Copyright &copy; 2024 Oslo Pust
