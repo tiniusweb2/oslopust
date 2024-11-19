@@ -4,38 +4,47 @@ site_author: Oslo Pust Team
 
 theme:
   name: material
+  # Custom theme settings
   palette:
+    # Light mode
     - media: "(prefers-color-scheme: light)"
       scheme: default
-      primary: indigo
-      accent: blue
+      primary: deep purple
+      accent: purple
       toggle:
         icon: material/brightness-7
         name: Switch to dark mode
+    # Dark mode
     - media: "(prefers-color-scheme: dark)"
       scheme: slate
-      primary: indigo
-      accent: blue
+      primary: purple
+      accent: deep purple
       toggle:
         icon: material/brightness-4
         name: Switch to light mode
+  font:
+    text: Roboto
+    code: Roboto Mono
   features:
     - navigation.tabs
     - navigation.sections
+    - navigation.path
+    - navigation.indexes
     - navigation.top
     - navigation.tracking
-    - navigation.expand
+    - navigation.tabs.sticky
+    - toc.follow
     - search.suggest
     - search.highlight
     - content.tabs.link
+    - content.code.annotation
     - content.code.copy
-    - toc.follow
 
+# Improved navigation structure
 nav:
-  - Overview: 
-    - Project: index.md
+  - Home: 
+    - Overview: index.md
     - Business Plan: business-plan.md
-    - Competitors: competitors.md
   - Products:
     - Specifications: specifications/product-supplier-specs.md
     - Supplier Guide: suppliers-guide.md
@@ -46,6 +55,13 @@ nav:
 
 plugins:
   - search
+  # Add PDF export capability
+  - with-pdf:
+      author: Oslo Pust Team
+      copyright: Copyright © 2024 Oslo Pust
+      cover_subtitle: Internal Documentation
+      toc_level: 3
+      output_path: pdf/documentation.pdf
 
 markdown_extensions:
   - pymdownx.highlight:
@@ -65,7 +81,10 @@ markdown_extensions:
   - def_list
   - footnotes
 
-extra_javascript:
-  - https://cdnjs.cloudflare.com/ajax/libs/mermaid/10.6.1/mermaid.min.js
+extra:
+  social:
+    - icon: fontawesome/brands/github
+      link: https://github.com/tiniusweb2
+  generator: false
 
 copyright: Copyright &copy; 2024 Oslo Pust
