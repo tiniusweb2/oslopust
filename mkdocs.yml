@@ -1,4 +1,4 @@
-site_name: oslopust
+site_name: Oslo Pust
 theme:
   name: material
   features:
@@ -10,6 +10,16 @@ theme:
     - content.tabs.link
     - content.code.annotation
     - content.code.copy
+
+nav:
+  - Home: index.md
+  - Specifications:
+    - Product & Supplier: specifications/product-supplier-specs.md
+  - Team:
+    - Roles: roles.md
+  - Guide:
+    - Suppliers: suppliers-guide.md
+
 markdown_extensions:
   - pymdownx.highlight:
       anchor_linenums: true
@@ -20,3 +30,4 @@ markdown_extensions:
   - pymdownx.details
   - attr_list
   - md_in_html
+  - tables
