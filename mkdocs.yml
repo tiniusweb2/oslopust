@@ -45,11 +45,7 @@ markdown_extensions:
       anchor_linenums: true
   - pymdownx.inlinehilite
   - pymdownx.snippets
-  - pymdownx.superfences:
-      custom_fences:
-        - name: mermaid
-          class: mermaid
-          format: !!python/name:pymdownx.superfences.fence_code_format
+  - pymdownx.superfences
   - admonition
   - pymdownx.details
   - attr_list
@@ -57,8 +53,16 @@ markdown_extensions:
   - tables
   - footnotes
 
+extra_javascript:
+  - javascripts/mermaid.js
+
+extra_css:
+  - stylesheets/extra.css
+
+copyright: Copyright &copy; 2024 Oslo Pust
 nav:
   - Home: index.md
+  - Test: test.md
   - Business:
     - Overview: business/index.md
     - Business Plan: business/business-plan.md
@@ -73,12 +77,3 @@ nav:
     - Roles: team/roles.md
   - Resources:
     - Overview: resources/index.md
-
-extra_javascript:
-  - https://unpkg.com/mermaid@9.4.3/dist/mermaid.min.js
-  - javascripts/mermaid.js
-
-extra_css:
-  - stylesheets/extra.css
-
-copyright: Copyright &copy; 2024 Oslo Pust
