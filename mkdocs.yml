@@ -3,7 +3,6 @@ site_description: Internal documentation for Oslo Pust
 site_author: Oslo Pust Team
 site_url: https://tiniusweb2.github.io/oslopust/
 
-# Theme configuration
 theme:
   name: material
   palette:
@@ -45,29 +44,20 @@ theme:
     - content.tooltips
     - announce.dismiss
 
-# Advanced plugins
 plugins:
   - search
   - git-revision-date
   - git-authors
   - glightbox
   - macros
-  - rss:
-      abstract_chars_count: 160
-      date_from_meta:
-        as_creation: "date"
-        as_update: "update"
-      feed_ttl: 1440
   - with-pdf:
       author: Oslo Pust Team
       copyright: Copyright © 2024 Oslo Pust
       cover_subtitle: Internal Documentation
       toc_level: 3
       output_path: pdf/documentation.pdf
-      custom_template_path: docs/assets/templates
   - swagger-ui-tag
 
-# Extended markdown features
 markdown_extensions:
   - pymdownx.highlight:
       anchor_linenums: true
@@ -103,33 +93,6 @@ markdown_extensions:
   - attr_list
   - def_list
 
-# Extra features
-extra:
-  analytics:
-    provider: google
-    property: !ENV GOOGLE_ANALYTICS_KEY
-  social:
-    - icon: fontawesome/brands/github
-      link: https://github.com/tiniusweb2
-  consent:
-    title: Cookie consent
-    description: >- 
-      We use cookies to recognize your repeated visits and preferences, as well
-      as to measure the effectiveness of our documentation and whether users
-      find what they're searching for. With your consent, you're helping us to
-      make our documentation better.
-  version:
-    provider: mike
-  tags:
-    HTML5: html
-    JavaScript: js
-    CSS: css
-  status:
-    new: Recently added
-    deprecated: Deprecated
-    beta: Beta
-
-# Add versioning
 extra_javascript:
   - https://cdnjs.cloudflare.com/ajax/libs/tablesort/5.2.1/tablesort.min.js
   - assets/javascripts/tables.js
@@ -138,5 +101,4 @@ extra_javascript:
 extra_css:
   - assets/stylesheets/extra.css
 
-# Copyright
 copyright: Copyright &copy; 2024 Oslo Pust
