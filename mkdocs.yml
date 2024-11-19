@@ -3,88 +3,88 @@ site_description: Internal documentation for Oslo Pust
 site_author: Oslo Pust Team
 
 theme:
-  name: material
-  # Custom theme settings
-  palette:
-    # Light mode
-    - media: "(prefers-color-scheme: light)"
-      scheme: default
-      primary: deep purple
-      accent: purple
-      toggle:
-        icon: material/brightness-7
-        name: Switch to dark mode
-    # Dark mode
-    - media: "(prefers-color-scheme: dark)"
-      scheme: slate
-      primary: purple
-      accent: deep purple
-      toggle:
-        icon: material/brightness-4
-        name: Switch to light mode
-  font:
-    text: Roboto
-    code: Roboto Mono
-  features:
-    - navigation.tabs
-    - navigation.sections
-    - navigation.path
-    - navigation.indexes
-    - navigation.top
-    - navigation.tracking
-    - navigation.tabs.sticky
-    - toc.follow
-    - search.suggest
-    - search.highlight
-    - content.tabs.link
-    - content.code.annotation
-    - content.code.copy
+ name: material
+ palette:
+   - media: "(prefers-color-scheme: light)"
+     scheme: default
+     primary: deep purple
+     accent: purple
+     toggle:
+       icon: material/brightness-7
+       name: Switch to dark mode
+   - media: "(prefers-color-scheme: dark)"
+     scheme: slate
+     primary: purple
+     accent: deep purple
+     toggle:
+       icon: material/brightness-4
+       name: Switch to light mode
+ font:
+   text: Roboto
+   code: Roboto Mono
+ features:
+   - navigation.tabs
+   - navigation.sections
+   - navigation.path
+   - navigation.indexes
+   - navigation.top
+   - navigation.tracking
+   - navigation.tabs.sticky
+   - toc.follow
+   - search.suggest
+   - search.highlight
+   - content.tabs.link
+   - content.code.annotation
+   - content.code.copy
 
-# Improved navigation structure
 nav:
-  - Home: 
-    - Overview: index.md
-    - Business Plan: business-plan.md
-  - Products:
-    - Specifications: specifications/product-supplier-specs.md
-    - Supplier Guide: suppliers-guide.md
-  - Team:
-    - Roles & Structure: roles.md
-  - Resources:
-    - Tools & Links: resources.md
+ - Home: index.md
+ - Business:
+   - Overview: business/index.md
+   - Business Plan: business/business-plan.md
+ - Products:
+   - Overview: products/index.md
+   - Specifications: products/product-supplier-specs.md
+ - Operations:
+   - Overview: operations/index.md
+   - Suppliers: operations/suppliers-guide.md
+ - Team:
+   - Overview: team/index.md
+   - Roles: team/roles.md
+ - Resources:
+   - Overview: resources/index.md
 
 plugins:
-  - search
-  # Add PDF export capability
-  - with-pdf:
-      author: Oslo Pust Team
-      copyright: Copyright © 2024 Oslo Pust
-      cover_subtitle: Internal Documentation
-      toc_level: 3
-      output_path: pdf/documentation.pdf
+ - search
+ - with-pdf:
+     author: Oslo Pust Team
+     copyright: Copyright © 2024 Oslo Pust
+     cover_subtitle: Internal Documentation
+     toc_level: 3
+     output_path: pdf/documentation.pdf
 
 markdown_extensions:
-  - pymdownx.highlight:
-      anchor_linenums: true
-  - pymdownx.inlinehilite
-  - pymdownx.snippets
-  - pymdownx.superfences:
-      custom_fences:
-        - name: mermaid
-          class: mermaid
-          format: !!python/name:pymdownx.superfences.fence_code_format
-  - admonition
-  - pymdownx.details
-  - attr_list
-  - md_in_html
-  - tables
-  - def_list
-  - footnotes
+ - pymdownx.highlight:
+     anchor_linenums: true
+ - pymdownx.inlinehilite
+ - pymdownx.snippets
+ - pymdownx.superfences:
+     custom_fences:
+       - name: mermaid
+         class: mermaid
+         format: !!python/name:pymdownx.superfences.fence_code_format
+ - admonition
+ - pymdownx.details
+ - attr_list
+ - md_in_html
+ - tables
+ - def_list
+ - footnotes
 
 extra:
-  social:
-    - icon: fontawesome/brands/github
-      link: https://github.com/tiniusweb2
-  generator: false
+ social:
+   - icon: fontawesome/brands/github
+     link: https://github.com/tiniusweb2
+ generator: false
 
 copyright: Copyright &copy; 2024 Oslo Pust

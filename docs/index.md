@@ -1,45 +1,47 @@
 # Oslo Pust Internal Wiki
 
-## 🚀 Project Overview
-We're launching an online store selling magnetic nasal strips and mouth tape. 
+Welcome to the Oslo Pust internal documentation site. This wiki contains all essential information about our products, processes, and team organization.
 
-**Core Business Model:**
-- Main Product: Reusable magnetic nasal strips
-- Revenue Stream: Monthly subscription for magnetic sticker refills
-- Additional Product: Mouth tape
+## Quick Navigation
 
-**Current Phase:**
-Website launch and market testing to validate product demand.
+### 💼 [Business](business/index.md)
+- Business Plan
+- Market Analysis
+- Financial Projections
 
-## 👥 Team
+### 📦 [Products](products/index.md)
+- Product Specifications
+- Pricing Strategy
+- Development Pipeline
 
-| Role | Name |
-|------|------|
-| Business Executive Lead | Lucas |
-| Sales Lead | Moses |
-| Project Manager | Tinius |
-| Operations Associate | Nathaniel |
-| Technical Consultant | Vaibhav |
+### 🔧 [Operations](operations/index.md)
+- Supplier Guide
+- Logistics
+- Quality Control
 
-## 🎯 Key Goals
-1. Website Development & Launch
-2. Marketing & Advertising Setup
-3. Inventory Management
+### 👥 [Team](team/index.md)
+- Roles & Responsibilities
+- Communication Guidelines
+- Meeting Schedules
 
-## 🔧 Tools & Resources
+### 📚 [Resources](resources/index.md)
+- Tool Access
+- Important Links
+- Templates
 
-### Essential Links
-- [Monday.com Board](https://monday.com)
-- [Shopify Admin](https://shopify.com/admin)
-- [Google Drive](https://drive.google.com)
-- [Task Tracker](https://app.slack.com/lists/T080S0JENQG/F081EFU5LMR)
+## Recent Updates
 
-### Documentation
-- [Product Specifications](specifications/product-supplier-specs.md)
-- [Supplier Guide](suppliers-guide.md)
-- [Team Roles](roles.md)
+!!! note "Latest Updates"
+   - Reorganized documentation structure
+   - Added comprehensive business plan
+   - Updated product specifications
+   - Added supplier guidelines
 
-## 📋 Quick Access
-- [Competitor Analysis](competitors.md)
-- [Product Pricing](specifications/product-supplier-specs.md#1-product-overview)
-- [Cost Estimates](specifications/product-supplier-specs.md#4-action-items--pending-decisions)
+## Contributing
+
+To contribute to this documentation:
+
+1. Clone the repository
+2. Create or update markdown files in the appropriate directory
+3. Preview changes using `mkdocs serve`
+4. Submit your changes via pull request
