@@ -1,24 +1,49 @@
-site_name: Oslo Pust
+site_name: Oslo Pust Wiki
+site_description: Internal documentation for Oslo Pust
+site_author: Oslo Pust Team
+
 theme:
   name: material
+  palette:
+    # Theme customization - use indigo + dark theme
+    - media: "(prefers-color-scheme: light)"
+      scheme: default
+      primary: indigo
+      accent: indigo
+      toggle:
+        icon: material/brightness-7
+        name: Switch to dark mode
+    - media: "(prefers-color-scheme: dark)"
+      scheme: slate
+      primary: indigo
+      accent: indigo
+      toggle:
+        icon: material/brightness-4
+        name: Switch to light mode
   features:
     - navigation.tabs
     - navigation.sections
     - navigation.top
+    - navigation.tracking
+    - navigation.expand
     - search.suggest
     - search.highlight
     - content.tabs.link
     - content.code.annotation
     - content.code.copy
+    - toc.follow
 
 nav:
-  - Home: index.md
-  - Specifications:
-    - Product & Supplier: specifications/product-supplier-specs.md
+  - Home: 
+    - Overview: index.md
+  - Business:
+    - Product Specifications: specifications/product-supplier-specs.md
+    - Supplier Guide: suppliers-guide.md
   - Team:
-    - Roles: roles.md
-  - Guide:
-    - Suppliers: suppliers-guide.md
+    - Roles & Responsibilities: roles.md
+  
+plugins:
+  - search
 
 markdown_extensions:
   - pymdownx.highlight:
@@ -31,3 +56,8 @@ markdown_extensions:
   - attr_list
   - md_in_html
   - tables
+  - def_list
+  - footnotes
+
+# Copyright
+copyright: Copyright &copy; 2024 Oslo Pust
