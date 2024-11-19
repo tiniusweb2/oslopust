@@ -34,6 +34,7 @@ theme:
 nav:
   - Overview: 
     - Project: index.md
+    - Business Plan: business-plan.md
     - Competitors: competitors.md
   - Products:
     - Specifications: specifications/product-supplier-specs.md
@@ -51,7 +52,11 @@ markdown_extensions:
       anchor_linenums: true
   - pymdownx.inlinehilite
   - pymdownx.snippets
-  - pymdownx.superfences
+  - pymdownx.superfences:
+      custom_fences:
+        - name: mermaid
+          class: mermaid
+          format: !!python/name:pymdownx.superfences.fence_code_format
   - admonition
   - pymdownx.details
   - attr_list
@@ -59,5 +64,8 @@ markdown_extensions:
   - tables
   - def_list
   - footnotes
+
+extra_javascript:
+  - https://cdnjs.cloudflare.com/ajax/libs/mermaid/10.6.1/mermaid.min.js
 
 copyright: Copyright &copy; 2024 Oslo Pust
