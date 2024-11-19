@@ -1,0 +1,13 @@
+/* Custom styles */
+.md-typeset h1 {
+    color: var(--md-primary-fg-color);
+    margin-bottom: 1rem;
+}
+
+.md-typeset .admonition {
+    font-size: 0.8rem;
+}
+
+.md-header {
+    box-shadow: 0 0 0.2rem rgba(0,0,0,.1), 0 0.2rem 0.4rem rgba(0,0,0,.2);
+}
