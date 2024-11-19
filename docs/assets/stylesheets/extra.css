@@ -1,4 +1,49 @@
-/* Custom styles */
+/* Make Mermaid diagrams clickable and zoomable */
+.mermaid-clickable {
+    cursor: pointer;
+    transition: transform 0.3s ease;
+    max-width: 100%;
+    margin: 20px auto;
+}
+
+.mermaid-clickable:hover {
+    transform: scale(1.02);
+}
+
+/* Add a modal for enlarged view */
+.mermaid-modal {
+    display: none;
+    position: fixed;
+    z-index: 1000;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0,0,0,0.9);
+    cursor: zoom-out;
+}
+
+.mermaid-modal .mermaid {
+    margin: 5% auto;
+    display: block;
+    max-width: 90%;
+    max-height: 90%;
+}
+
+/* Add zoom controls */
+.zoom-controls {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    z-index: 1001;
+    background: white;
+    padding: 10px;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+}
+
+/* Custom styles for better readability */
 .md-typeset h1 {
     color: var(--md-primary-fg-color);
     margin-bottom: 1rem;
