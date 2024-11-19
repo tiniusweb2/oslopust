@@ -38,7 +38,7 @@ markdown_extensions:
   - pymdownx.superfences:
       custom_fences:
         - name: mermaid
-          class: mermaid
+          class: mermaid zoomable
           format: !!python/name:pymdownx.superfences.fence_code_format
   - admonition
   - pymdownx.details
@@ -53,6 +53,7 @@ plugins:
 
 extra_javascript:
   - https://unpkg.com/mermaid@10.6.1/dist/mermaid.min.js
+  - javascripts/zoom.js
 
 extra_css:
   - stylesheets/extra.css
