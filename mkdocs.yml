@@ -5,18 +5,17 @@ site_author: Oslo Pust Team
 theme:
   name: material
   palette:
-    # Theme customization - use indigo + dark theme
     - media: "(prefers-color-scheme: light)"
       scheme: default
       primary: indigo
-      accent: indigo
+      accent: blue
       toggle:
         icon: material/brightness-7
         name: Switch to dark mode
     - media: "(prefers-color-scheme: dark)"
       scheme: slate
       primary: indigo
-      accent: indigo
+      accent: blue
       toggle:
         icon: material/brightness-4
         name: Switch to light mode
@@ -29,19 +28,21 @@ theme:
     - search.suggest
     - search.highlight
     - content.tabs.link
-    - content.code.annotation
     - content.code.copy
     - toc.follow
 
 nav:
-  - Home: 
-    - Overview: index.md
-  - Business:
-    - Product Specifications: specifications/product-supplier-specs.md
+  - Overview: 
+    - Project: index.md
+    - Competitors: competitors.md
+  - Products:
+    - Specifications: specifications/product-supplier-specs.md
     - Supplier Guide: suppliers-guide.md
   - Team:
-    - Roles & Responsibilities: roles.md
-  
+    - Roles & Structure: roles.md
+  - Resources:
+    - Tools & Links: resources.md
+
 plugins:
   - search
 
@@ -59,5 +60,4 @@ markdown_extensions:
   - def_list
   - footnotes
 
-# Copyright
 copyright: Copyright &copy; 2024 Oslo Pust

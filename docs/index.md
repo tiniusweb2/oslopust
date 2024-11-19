@@ -1,37 +1,45 @@
 # Oslo Pust Internal Wiki
 
-Welcome to the Oslo Pust internal documentation site. This wiki contains all essential information about our products, processes, and team organization.
+## 🚀 Project Overview
+We're launching an online store selling magnetic nasal strips and mouth tape. 
 
-## Quick Links
+**Core Business Model:**
+- Main Product: Reusable magnetic nasal strips
+- Revenue Stream: Monthly subscription for magnetic sticker refills
+- Additional Product: Mouth tape
 
-### 📦 Products & Suppliers
-- [Product Specifications](specifications/product-supplier-specs.md) - Detailed product information and pricing
-- [Supplier Guide](suppliers-guide.md) - Supplier information and requirements
+**Current Phase:**
+Website launch and market testing to validate product demand.
 
-### 👥 Team
-- [Roles & Responsibilities](roles.md) - Team structure and responsibilities
+## 👥 Team
 
-## Recent Updates
+| Role | Name |
+|------|------|
+| Business Executive Lead | Lucas |
+| Sales Lead | Moses |
+| Project Manager | Tinius |
+| Operations Associate | Nathaniel |
+| Technical Consultant | Vaibhav |
 
-!!! note "Latest Updates"
-    - Added initial product specifications
-    - Added team roles and responsibilities
-    - Added supplier guide
-    - Set up documentation structure
+## 🎯 Key Goals
+1. Website Development & Launch
+2. Marketing & Advertising Setup
+3. Inventory Management
 
-## Getting Started
+## 🔧 Tools & Resources
 
-If you're new to the team, start here:
+### Essential Links
+- [Monday.com Board](https://monday.com)
+- [Shopify Admin](https://shopify.com/admin)
+- [Google Drive](https://drive.google.com)
+- [Task Tracker](https://app.slack.com/lists/T080S0JENQG/F081EFU5LMR)
 
-1. Review the [team roles](roles.md) to understand our organization
-2. Familiarize yourself with our [product specifications](specifications/product-supplier-specs.md)
-3. Understand our [supplier requirements](suppliers-guide.md)
+### Documentation
+- [Product Specifications](specifications/product-supplier-specs.md)
+- [Supplier Guide](suppliers-guide.md)
+- [Team Roles](roles.md)
 
-## Contributing to This Wiki
-
-This documentation is maintained using MkDocs. To contribute:
-
-1. Clone the repository
-2. Create or update markdown files in the `docs` folder
-3. Preview changes locally using `mkdocs serve`
-4. Commit and push your changes
+## 📋 Quick Access
+- [Competitor Analysis](competitors.md)
+- [Product Pricing](specifications/product-supplier-specs.md#1-product-overview)
+- [Cost Estimates](specifications/product-supplier-specs.md#4-action-items--pending-decisions)
